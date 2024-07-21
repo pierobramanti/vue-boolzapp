@@ -20,19 +20,22 @@ body {
     width: 50px;
 }
 
+.fs_14 {
+    font-size: 14px;
+}
+
+/*UTILITIES*/
 .bg-grey {
     background-color: #E5E6E8;
 }
-
 
 .bg-azure {
     background-color: #8DD7FA;  
 }
 
-.fs_14 {
-    font-size: 14px;
+.bg-white{
+    background-color: white;
 }
-
 .text_azure {
     color: #8DD7FA
 }
