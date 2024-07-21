@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+}
+
+#app {
+    height: 100%;
+    background-color: #009687;
+    padding: 20px;
+}
+
+
+.profile img {
+    width: 50px;
+}
+
+.bg-grey {
+    background-color: #E5E6E8;
+}
