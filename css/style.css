@@ -21,6 +21,12 @@ body {
 }
 
 
+.bg-image {
+    background-image: url("../img/mine.jpg");
+    background-repeat: repeat; 
+    height: 548px;
+}
+
 
 /*UTILITIES*/
 .bg-grey {
