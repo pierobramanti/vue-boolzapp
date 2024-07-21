@@ -11,6 +11,7 @@ body {
 #app {
     height: 100%;
     background-color: #009687;
+    background-image: linear-gradient(to bottom, #009687 0px, #009687 100px, #D7D8D3 20px, #D7D8D3 200px);
     padding: 20px;
 }
 
@@ -21,4 +22,17 @@ body {
 
 .bg-grey {
     background-color: #E5E6E8;
+}
+
+
+.bg-azure {
+    background-color: #8DD7FA;  
+}
+
+.fs_14 {
+    font-size: 14px;
+}
+
+.text_azure {
+    color: #8DD7FA
 }
