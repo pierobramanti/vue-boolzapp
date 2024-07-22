@@ -45,12 +45,12 @@
                             <!-- LISTA CONTATTI -->
                             <div>
                                 <ul class="list list-unstyled section-list-contacts">
-                                    <li>
+                                    <li v-for="(contact, index) in contacts">
                                         <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
                                             <div class="d-flex justify-content-center ">
-                                                <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_1.jpg" alt="">
+                                                <img class="img-fluid object-fit-contain  rounded-circle" :src="contact.avatar" :alt="contact.name">
                                                 <div class="d-flex justify-content-center flex-column ">
-                                                    <h4 class="mx-2 my-0 fs_16">Michele</h4>
+                                                    <h4 class="mx-2 my-0 fs_16"> {{ contact.name }} </h4>
                                                     <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
                                                 </div>
                                             </div>
@@ -59,7 +59,8 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
+                                <!-- ZONA RIMOSSA GRAZIE A V-FOR -->
+                                   <!-- <li>
                                         <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
                                             <div class="d-flex justify-content-center ">
                                                 <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_2.jpg" alt="">
@@ -156,7 +157,7 @@
                                                 <p class="fs_8 text-secondary">12:00</p>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>  
