@@ -170,6 +170,8 @@ createApp({
         }
     },
     methods: {
-
+        changeChat(i) {
+            this.active = i
+        },
     }
 }).mount("#app")

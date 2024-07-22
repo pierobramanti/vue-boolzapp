@@ -45,7 +45,7 @@
                             <!-- LISTA CONTATTI -->
                             <div>
                                 <ul class="list list-unstyled section-list-contacts">
-                                    <li v-for="(contact, index) in contacts">
+                                    <li v-for="(contact, index) in contacts"  @click="changeChat(index)">
                                         <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
                                             <div class="d-flex justify-content-center ">
                                                 <img class="img-fluid object-fit-contain  rounded-circle" :src="contact.avatar" :alt="contact.name">
@@ -183,9 +183,9 @@
                             <!--SEZIONE CHAT-->
     
                             <div class="bg-image section-chat border">
-                                <div v-for="message, index in contacts[active].messages" class="message-container">
+                                <div v-for="message, index in contacts[active].messages" class="message-container px-4 py-2">
                                     <div class=" d-flex mx-2 p-1 border" :class=" message.status == 'sent' ? 'send-message ' : 'received-message ' ">
-                                        <p class="m-1">{{message.message}}</p>
+                                        <p class="m-1 py-1">{{message.message}}</p>
                                         <p class="mx-2 fs_10 text-end text-secondary">{{message.date}}</p>
                                     </div>
                                 </div>
