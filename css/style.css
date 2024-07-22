@@ -37,12 +37,21 @@ body {
      
 }
 
+.message-container {
+    display: flex;
+    justify-content: flex-start; 
+    flex-direction: column;
+    margin: 5px 0;
+}
+
 .send-message{
     background-color: rgb(161, 238, 161);
+    align-self: flex-end
 }
 
 .received-message{
     background-color: rgb(247, 245, 245);
+    align-self: flex-start;
 }
 
 .send-message,

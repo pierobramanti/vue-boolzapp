@@ -183,25 +183,27 @@
                             <!--SEZIONE CHAT-->
     
                             <div class="bg-image section-chat border">
-                                <div class="d-flex justify-content-end">
-                                    <div class="send-message my-2 mx-2 p-1 border">
-                                        <p class="m-1">Hai portato a spasso il cane?</p>
-                                        <p class="mx-2 fs_10 text-end text-secondary">15:30</p>
+                                <div v-for="message, index in contacts[active].messages" class="message-container">
+                                    <div class=" d-flex mx-2 p-1 border" :class=" message.status == 'sent' ? 'send-message ' : 'received-message ' ">
+                                        <p class="m-1">{{message.message}}</p>
+                                        <p class="mx-2 fs_10 text-end text-secondary">{{message.date}}</p>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-end">
+                                
+                                <!-- <div class="d-flex justify-content-end">
                                     <div class="send-message my-2 mx-2 p-1 border">
                                         <p class="m-1">Ricordati di stendere i panni</p>
                                         <p class="mx-2 fs_10 text-end text-secondary">15:50</p>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-start">
+                                <div class="d-flex ">
                                     <div class="received-message my-2 mx-2 p-1 border">
                                         <p class="m-1">Tutto fatto!</p>
                                         <p class="mx-2 fs_10 text-end text-secondary">16:15</p>
                                     </div>
-                                </div>
-                            </div>
+                                </div>-->
+                            </div> 
+
                             <!--INPUT CHAT-->
                             <div class="bg-grey">
                                 <div class="input-group d-flex align-items-center">
