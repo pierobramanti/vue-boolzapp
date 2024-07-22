@@ -40,12 +40,12 @@
                             <!-- BARRA DI RICERCA -->
                             <div class="input-group p-1 border bg-white">
                                 <button class="btn btn-outline-secondary px-4" type="button" id="button-addon1"><i class="fa-solid fa-search"></i></button>
-                                <input type="text" class="form-control " placeholder="Cerca o inizia una nuova chat">
+                                <input v-model="filter" type="text" class="form-control " placeholder="Cerca o inizia una nuova chat">
                             </div>
                             <!-- LISTA CONTATTI -->
                             <div>
                                 <ul class="list list-unstyled section-list-contacts">
-                                    <li v-for="(contact, index) in contacts"  @click="changeChat(index)">
+                                    <li v-for="(contact, index) in contacts"  @click="changeChat(index)" v-show="search(contact)">
                                         <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
                                             <div class="d-flex justify-content-center ">
                                                 <img class="img-fluid object-fit-contain  rounded-circle" :src="contact.avatar" :alt="contact.name">

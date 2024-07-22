@@ -5,6 +5,7 @@ createApp({
         return {
             active: 0,
             user: undefined,
+            filter: "",
             contacts: [
                 {
                 name: 'Michele',
@@ -190,6 +191,9 @@ createApp({
                 }, 1000);
                 this.user = undefined;
             }
-        }
+        },
+        search(contact) {
+            return contact.name.toLowerCase().includes(this.filter.toLowerCase())
+              },
     }
 }).mount("#app");
