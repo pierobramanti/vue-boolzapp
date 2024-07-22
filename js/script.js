@@ -4,6 +4,7 @@ createApp({
     data() {
         return {
             active: 0,
+            user: undefined,
             contacts: [
                 {
                 name: 'Michele',
@@ -173,5 +174,15 @@ createApp({
         changeChat(i) {
             this.active = i
         },
+        send() {
+            let user_message = {
+              message: this.user,
+              status: "sent",
+            }
+            if (!this.user == "") {
+              this.contacts[this.active].messages.push(user_message);
+            }
+            this.user = undefined;
+          },
     }
 }).mount("#app")
