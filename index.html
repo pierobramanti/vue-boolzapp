@@ -14,189 +14,206 @@
         <div id="app">
             <div class="container">
                 <div class="row g-0">
-                    <div class="col-4">
-                        <!-- PROFILO -->
-                        <div class="d-flex justify-content-between align-items-center bg-grey p-2 ">
-                            <div class="profile d-flex align-items-center">
-                                <img src="./img/avatar_io.jpg" alt="my_profile"
-                                    class="img-fluid object-fit-contain border rounded-circle">
-                                <h3 class="m-2 fs-5">Sofia</h3>
+                    <div class="col-12 d-flex">
+                        <div class="col-4 ">
+                            <!-- PROFILO -->
+                            <div class="d-flex justify-content-between align-items-center bg-grey p-2 ">
+                                <div class="profile d-flex align-items-center">
+                                    <img src="./img/avatar_io.jpg" alt="my_profile"
+                                        class="img-fluid object-fit-contain border rounded-circle">
+                                    <h3 class="m-2 fs-5">Sofia</h3>
+                                </div>
+                                <div div class="icons-profile p-3">
+                                    <a href=""><i class="fa-solid fa-circle-notch text-secondary"></i></a>
+                                    <a href="" class="mx-2"><i class="fa-solid fa-message text-secondary"></i></a>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical text-secondary"></i></a>
+                                </div>
                             </div>
-                            <div div class="icons-profile p-3">
-                                <a href=""><i class="fa-solid fa-circle-notch text-secondary"></i></a>
-                                <a href="" class="mx-2"><i class="fa-solid fa-message text-secondary"></i></a>
+                            <!-- NOTIFICHE -->
+                            <div class="d-flex align-items-center bg-azure p-3">
+                                <a class="p-2 me-3 border rounded-circle bg-white text_azure" href=""><i class="fa-solid fa-bell-slash"></i></a>
+                                <div>
+                                    <p class="m-0">Ricevi notifiche di nuovi messaggi</p>
+                                    <a class="text-dark fs_14" href="">Attiva notifiche desktop</a>
+                                </div>
+                            </div>
+                            <!-- BARRA DI RICERCA -->
+                            <div class="input-group p-1 border bg-white">
+                                <button class="btn btn-outline-secondary px-4" type="button" id="button-addon1"><i class="fa-solid fa-search"></i></button>
+                                <input type="text" class="form-control " placeholder="Cerca o inizia una nuova chat">
+                            </div>
+                            <!-- LISTA CONTATTI -->
+                            <ul class="list list-unstyled ">
+                                <li>
+                                    <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
+                                        <div class="d-flex justify-content-center ">
+                                            <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_1.jpg" alt="">
+                                            <div class="d-flex justify-content-center flex-column ">
+                                                <h4 class="mx-2 my-0 fs_16">Michele</h4>
+                                                <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs_8 text-secondary">12:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
+                                        <div class="d-flex justify-content-center ">
+                                            <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_2.jpg" alt="">
+                                            <div class="d-flex justify-content-center flex-column ">
+                                                <h4 class="mx-2 my-0 fs_16">Fabio</h4>
+                                                <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs_8 text-secondary">12:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
+                                        <div class="d-flex justify-content-center ">
+                                            <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_3.jpg" alt="">
+                                            <div class="d-flex justify-content-center flex-column ">
+                                                <h4 class="mx-2 my-0 fs_16">Samuele</h4>
+                                                <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs_8 text-secondary">12:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
+                                        <div class="d-flex justify-content-center ">
+                                            <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_4.jpg" alt="">
+                                            <div class="d-flex justify-content-center flex-column ">
+                                                <h4 class="mx-2 my-0 fs_16">Alessandro B.</h4>
+                                                <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs_8 text-secondary">12:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
+                                        <div class="d-flex justify-content-center ">
+                                            <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_5.jpg" alt="">
+                                            <div class="d-flex justify-content-center flex-column ">
+                                                <h4 class="mx-2 my-0 fs_16">Alessandro L.</h4>
+                                                <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs_8 text-secondary">12:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
+                                        <div class="d-flex justify-content-center ">
+                                            <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_6.jpg" alt="">
+                                            <div class="d-flex justify-content-center flex-column ">
+                                                <h4 class="mx-2 my-0 fs_16">Claudia</h4>
+                                                <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs_8 text-secondary">12:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
+                                        <div class="d-flex justify-content-center ">
+                                            <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_7.jpg" alt="">
+                                            <div class="d-flex justify-content-center flex-column ">
+                                                <h4 class="mx-2 my-0 fs_16">Federico</h4>
+                                                <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs_8 text-secondary">12:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
+                                        <div class="d-flex justify-content-center ">
+                                            <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_8.jpg" alt="">
+                                            <div class="d-flex justify-content-center flex-column ">
+                                                <h4 class="mx-2 my-0 fs_16">Davide</h4>
+                                                <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs_8 text-secondary">12:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                             </ul>
+                        </div>  
+                        <div class="col-8 border-start">
+                            <!--PROFILO CHAT-->
+                            <div class="d-flex justify-content-between align-items-center bg-grey p-2 ">
+                                <div class="profile d-flex align-items-center">
+                                    <img src="./img/avatar_1.jpg" alt="my_profile"
+                                        class="img-fluid object-fit-contain border rounded-circle">
+                                    <div class="d-flex justify-content-center flex-column ">
+                                        <h4 class="mx-2 my-0 fs_16">Michele</h4>
+                                        <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato oggi alle 12:00</p>
+                                    </div>
+                                </div>
+                                <div div class="icons-profile p-3 d-flex">
+                                    <a href="" class="d-sm-none d-md-block"><i
+                                        class="fa-solid fa-search text-secondary"></i></a>
+                                <a href="" class="mx-3 d-sm-none d-md-block"><i
+                                        class="fa-solid fa-paperclip text-secondary"></i></a>
                                 <a href=""><i class="fa-solid fa-ellipsis-vertical text-secondary"></i></a>
-                            </div>
-                        </div>
-                        <!-- NOTIFICHE -->
-                        <div class="d-flex align-items-center bg-azure p-3">
-                            <a class="p-2 me-3 border rounded-circle bg-white text_azure" href=""><i class="fa-solid fa-bell-slash"></i></a>
-                            <div>
-                                <p class="m-0">Ricevi notifiche di nuovi messaggi</p>
-                                <a class="text-dark fs_14" href="">Attiva notifiche desktop</a>
-                            </div>
-                        </div>
-                        <!-- BARRA DI RICERCA -->
-                        <div class="input-group p-1 border bg-white">
-                            <button class="btn btn-outline-secondary px-4" type="button" id="button-addon1"><i class="fa-solid fa-search"></i></button>
-                            <input type="text" class="form-control " placeholder="Cerca o inizia una nuova chat">
-                        </div>
-                        <!-- LISTA CONTATTI -->
-                        <ul class="list list-unstyled ">
-                            <li>
-                                <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
-                                    <div class="d-flex justify-content-center ">
-                                        <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_1.jpg" alt="">
-                                        <div class="d-flex justify-content-center flex-column ">
-                                            <h4 class="mx-2 my-0 fs_16">Michele</h4>
-                                            <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="fs_8 text-secondary">12:00</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
-                                    <div class="d-flex justify-content-center ">
-                                        <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_2.jpg" alt="">
-                                        <div class="d-flex justify-content-center flex-column ">
-                                            <h4 class="mx-2 my-0 fs_16">Fabio</h4>
-                                            <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="fs_8 text-secondary">12:00</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
-                                    <div class="d-flex justify-content-center ">
-                                        <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_3.jpg" alt="">
-                                        <div class="d-flex justify-content-center flex-column ">
-                                            <h4 class="mx-2 my-0 fs_16">Samuele</h4>
-                                            <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="fs_8 text-secondary">12:00</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
-                                    <div class="d-flex justify-content-center ">
-                                        <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_4.jpg" alt="">
-                                        <div class="d-flex justify-content-center flex-column ">
-                                            <h4 class="mx-2 my-0 fs_16">Alessandro B.</h4>
-                                            <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="fs_8 text-secondary">12:00</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
-                                    <div class="d-flex justify-content-center ">
-                                        <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_5.jpg" alt="">
-                                        <div class="d-flex justify-content-center flex-column ">
-                                            <h4 class="mx-2 my-0 fs_16">Alessandro L.</h4>
-                                            <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="fs_8 text-secondary">12:00</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
-                                    <div class="d-flex justify-content-center ">
-                                        <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_6.jpg" alt="">
-                                        <div class="d-flex justify-content-center flex-column ">
-                                            <h4 class="mx-2 my-0 fs_16">Claudia</h4>
-                                            <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="fs_8 text-secondary">12:00</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
-                                    <div class="d-flex justify-content-center ">
-                                        <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_7.jpg" alt="">
-                                        <div class="d-flex justify-content-center flex-column ">
-                                            <h4 class="mx-2 my-0 fs_16">Federico</h4>
-                                            <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="fs_8 text-secondary">12:00</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="profile d-flex py-1 px-3 justify-content-between bg-white border-bottom">
-                                    <div class="d-flex justify-content-center ">
-                                        <img class="img-fluid object-fit-contain  rounded-circle" src="./img/avatar_8.jpg" alt="">
-                                        <div class="d-flex justify-content-center flex-column ">
-                                            <h4 class="mx-2 my-0 fs_16">Davide</h4>
-                                            <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p class="fs_8 text-secondary">12:00</p>
-                                    </div>
-                                </div>
-                            </li>
-                         </ul>
-                    </div>  
-                    <div class="col-8 border-start">
-                        <!--PROFILO CHAT-->
-                        <div class="d-flex justify-content-between align-items-center bg-grey p-2 ">
-                            <div class="profile d-flex align-items-center">
-                                <img src="./img/avatar_1.jpg" alt="my_profile"
-                                    class="img-fluid object-fit-contain border rounded-circle">
-                                <div class="d-flex justify-content-center flex-column ">
-                                    <h4 class="mx-2 my-0 fs_16">Michele</h4>
-                                    <p class="my-0 mx-2 fs_14 text-secondary">Ultimo messaggio inviato oggi alle 12:00</p>
                                 </div>
                             </div>
-                            <div div class="icons-profile p-3 d-flex">
-                                <a href="" class="d-sm-none d-md-block"><i
-                                    class="fa-solid fa-search text-secondary"></i></a>
-                            <a href="" class="mx-3 d-sm-none d-md-block"><i
-                                    class="fa-solid fa-paperclip text-secondary"></i></a>
-                            <a href=""><i class="fa-solid fa-ellipsis-vertical text-secondary"></i></a>
-                            </div>
-                        </div>
-                        <!--SEZIONE CHAT-->
+                            <!--SEZIONE CHAT-->
+    
+                            <div class="bg-image border">
+                                <div class="d-flex justify-content-end">
+                                    <div class="send-message my-2 p-1 border">
+                                        <p class="m-1">Hai portato a spasso il cane?</p>
+                                        <p class="mx-2 fs_10 text-end text-secondary">15:30</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="send-message">
 
-                        <div class="bg-image border">
- 
-                        </div>
-                        <!--INPUT CHAT-->
-                        <div class="bg-grey">
-                            <div class="input-group d-flex align-items-center">
-                                <div class="input-group-prepend bg-grey">
-                                    <span class="input-group-text mx-3 border-0 ">
-                                        <i class="fa-regular fa-face-smile"></i>
-                                    </span>
+                                    </div>
                                 </div>
-                                <div class="input-group form-control bg-grey border-0 ">
-                                    <input type="text" class="form-control"
-                                    aria-label="Amount (to the nearest dollar)">
+                                <div class="d-flex justify-content-start">
+                                    <div class="received-message">
+
+                                    </div>
                                 </div>
-                                <div class="input-group-append bg-grey">
-                                    <span class="input-group-text mx-3 border-0 ">
-                                        <i class="fa-solid fa-microphone"></i>
-                                    </span>
+                            </div>
+                            <!--INPUT CHAT-->
+                            <div class="bg-grey">
+                                <div class="input-group d-flex align-items-center">
+                                    <div class="input-group-prepend bg-grey">
+                                        <span class="input-group-text mx-3 border-0 ">
+                                            <i class="fa-regular fa-face-smile"></i>
+                                        </span>
+                                    </div>
+                                    <div class="input-group form-control bg-grey border-0 ">
+                                        <input type="text" class="form-control"
+                                        aria-label="Amount (to the nearest dollar)">
+                                    </div>
+                                    <div class="input-group-append bg-grey">
+                                        <span class="input-group-text mx-3 border-0 ">
+                                            <i class="fa-solid fa-microphone"></i>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

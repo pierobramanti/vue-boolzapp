@@ -24,11 +24,28 @@ body {
 .bg-image {
     background-image: url("../img/mine.jpg");
     background-repeat: repeat; 
-    height: 548px;
+     
+}
+
+.send-message{
+    background-color: rgb(161, 238, 161);
+}
+
+.received-message{
+    background-color: rgb(230, 224, 224);
+}
+
+.send-message,
+.received-message{
+    border-radius: 10px;
+    min-width: 100px;
+    max-width: 500px;
 }
 
 
 /*UTILITIES*/
+
+
 .bg-grey {
     background-color: #E5E6E8;
 }
