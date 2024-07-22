@@ -172,17 +172,24 @@ createApp({
     },
     methods: {
         changeChat(i) {
-            this.active = i
+            this.active = i;
         },
         send() {
             let user_message = {
-              message: this.user,
-              status: "sent",
+                message: this.user,
+                status: "sent",
+            };
+            let pc_message = {
+                message: "Ok",
+                status: "received",
+            };
+            if (this.user !== "") {
+                this.contacts[this.active].messages.push(user_message);
+                setTimeout(() => {
+                    this.contacts[this.active].messages.push(pc_message);
+                }, 1000);
+                this.user = undefined;
             }
-            if (!this.user == "") {
-              this.contacts[this.active].messages.push(user_message);
-            }
-            this.user = undefined;
-          },
+        }
     }
-}).mount("#app")
+}).mount("#app");
